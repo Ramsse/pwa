@@ -8,7 +8,7 @@ const INMUTABLE_CACHE = "inmutable-v1";
 //const app-shell-----todo lo que es necesario para mi aplicación
 //cualquier libreria que este mal hace que no se instale el appshell
 const APP_SHELL = [
-  "/",
+  //"/",--sirve en desarrollo pero no al subirlo
   "index.html",
   "css/style.css",
   "img/avatars/hulk.jpg",

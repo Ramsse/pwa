@@ -1,6 +1,14 @@
+var url = window.location.href; //obtiene todo el url
+var swLocation = "/pwa/sw.js";
+
 //llamamos al service worler
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/sw.js");
+  //---------
+  if (url.includes("localhost")) {
+    swLocation = "/sw.js";
+  }
+  //---------
+  navigator.serviceWorker.register(swLocation);
 }
 // Referencias de jQuery
 
